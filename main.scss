@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.btn {
+  width: 250px;
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+.ios {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0px 3px 0px hsl(171, 72%, 34%), 0 13px 41px hsl(171, 66%, 44%);
+}
+.mac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0px 3px 0px hsl(233, 70%, 58%), 0 13px 41px hsl(233, 100%, 69%);
+  margin-left: 20px;
+}
+h2 {
+  text-align: center;
+  font-size: 40px;
+  color: hsl(210, 10%, 33%);
+  margin: 0;
+}
+h2 + p {
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  width: 700px;
+  margin: 20px auto;
+  line-height: 1.8;
+  font-size: 18px;
+}
+/* Start Landing */
+.landing {
+  background-image: url("./images/bg-header-desktop.png");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .intro {
+    width: 700px;
+    h1 {
+      font-size: 45px;
+      font-weight: bold;
+      margin: 50px 0 20px;
+      color: hsl(210, 10%, 33%);
+    }
+    p {
+      font-size: 18px;
+      color: hsl(201, 11%, 66%);
+      line-height: 1.5;
+      margin-bottom: 50px;
+    }
+  }
+}
+/* End Landing */
+/* Start Track */
+.track {
+  .container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .image {
+      width: 50%;
+      img {
+        width: 100%;
+        position: relative;
+        left: -20px;
+      }
+    }
+    .features {
+      width: 45%;
+      h3 {
+        color: hsl(210, 10%, 33%);
+        margin: 0;
+        font-size: 25px;
+      }
+      p {
+        color: hsl(201, 11%, 66%);
+        margin: 10px 0 60px;
+        width: 375px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+/* End Track */
+/* Start Access */
+.access {
+  .image {
+    padding: 70px 0;
+    text-align: center;
+  }
+}
+/* End Access */
+/* Start Supercharge */
+.supercharge {
+  padding: 50px 0;
+  .container {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 50px auto;
+    .box {
+      width: calc(97% / 3);
+      img {
+        margin-bottom: 20px;
+        width: 50px;
+      }
+      .preview {
+        margin-bottom: 34px;
+      }
+      h3 {
+        color: hsl(210, 10%, 33%);
+        font-size: 25px;
+      }
+      p {
+        color: hsl(201, 11%, 66%);
+        font-size: 18px;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+/* End Supercharge */
+/* start companys */
+.companys {
+  padding: 70px auto;
+  .container {
+    width: 1170px;
+    padding: 50px 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 150px;
+    }
+  }
+}
+/* End companys */
+
+/* Start Clipboard */
+.clipboard {
+  padding: 70px 0;
+  text-align: center;
+  p {
+    margin-bottom: 50px;
+  }
+}
+/* End Clipboard */
+/* Start Footer */
+footer {
+  background-color: hsla(202, 11%, 66%, 0.186);
+  padding: 30px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    margin: auto;
+    .logo {
+      width: 10%;
+      img {
+        width: 50px;
+      }
+    }
+    .links {
+      width: 70%;
+      display: flex;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 50px 0;
+      }
+      a {
+        text-decoration: none;
+        color: hsl(210, 10%, 33%);
+        font-size: 18px;
+        margin-bottom: 20px;
+        display: block;
+        font-weight: 400;
+        transition: 0.3s;
+        &:hover {
+          color: hsl(171, 66%, 44%);
+        }
+      }
+    }
+    .icons {
+      width: 20%;
+      img {
+        width: 25px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+/* End Footer */
+/* Mobile Design */
+@media (max-width: 767px) {
+  .btn {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .mac {
+    margin-left: 0;
+  }
+  p {
+    width: 100% !important;
+  }
+  .landing {
+    height: 100%;
+    padding: 30px;
+    display: block;
+    .intro {
+      width: 100%;
+    }
+  }
+  .track {
+    padding: 0 20px;
+    .container {
+      display: block;
+      text-align: center;
+      .image {
+        width: 100%;
+        img {
+          left: 0;
+        }
+      }
+      .features {
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+  }
+  .access {
+    padding: 0 20px;
+    .image {
+      padding: 10px 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .supercharge {
+    padding: 0 20px;
+    .container {
+      width: 100%;
+      display: block;
+      .box {
+        width: 100%;
+        img {
+          margin: 20px 0 0;
+        }
+        .preview {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .companys {
+    padding: 0 20px;
+    .container {
+      width: 100%;
+      display: block;
+      img {
+        margin: 0px auto 50px;
+        display: block;
+      }
+    }
+  }
+  .clipboard {
+    padding: 0 20px 50px;
+  }
+  footer {
+    .container {
+      width: 100%;
+      display: block;
+      text-align: center;
+      .logo {
+        width: 100%;
+      }
+      .links {
+        display: block;
+        width: 100%;
+        margin: 40px auto;
+      }
+      .icons {
+        width: 100%;
+      }
+    }
+  }
+}
